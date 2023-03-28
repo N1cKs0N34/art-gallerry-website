@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+
+body{
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 0;
+    font-family: 'Big Shoulders Display', 'Outfit';
+}
+.header{
+    position: relative;
+
+}
+.tablet-map{
+    display: none;
+}
+.desktop-map{
+    display: none;
+}
+header img{
+    width: 100%;
+    
+    
+}
+.buttons{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.btn2{
+    font-family: 'Big Shoulders Display';
+    background-color: #151515;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    color: #FFFFFF;
+    padding: 24px 35px 24px 35px;
+    float: left;
+    border: none;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: #D5966C;
+    transition: 0.3s;
+}
+.btn1{
+    background-color: #D5966C;
+    padding: 21px 21px 23px 21px;
+    float: left;
+    border: none;
+    cursor: pointer;
+}
+
+main{
+    padding: 48px 16px 56px 16px;
+    background-color: #151515;
+    
+
+}
+main h2{
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+main h4{
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #D5966C;
+}
+main p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.main-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer{
+    background: #D5966C;
+    padding: 48px 32px 48px 32px ;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+footer p{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+footer h4{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    /* line-height: 45px; */
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+}
+footer .face:hover{
+    background-color: #151515;
+    transition: 0.3s;
+}
+footer .insta:hover{
+    background-color: #151515;
+    transition: 0.3s;
+}
+footer .twi:hover{
+    background-color: #151515;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 650px){
+    .mobile-map{
+        display: none;
+    }
+    .tablet-map{
+        display: flex;
+        height: 600px;
+    }
+    .buttons{
+        left: 50px;
+    }
+    main{
+        display: flex;
+        padding: 88px 40px 80px 39px;
+        gap: 68px;
+    }
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 56px 40px 56px 39px;
+        gap: 60px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .tablet-map{
+        display: none;
+
+    }
+    .desktop-map{
+        display: flex;
+        height: 600px;
+    }
+    .buttons{
+        left: 150px;
+    }
+    main{
+        padding: 104px 165px 128px 165px;
+        gap: 220px;
+    }
+    .footer{
+        padding: 80px 165px 80px 165px;
+        gap: 140px;
+    }
+}
